@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="form">
+        <p><strong>Параметры окружности</strong></p>
+        <div class="container">
+            <div class=""><input type="number" name="value1" min="0" placeholder="Введите радиус" /></div>
+            <div class=""><input type="number" name="value2" min="0" placeholder="Координата центра по X" /></div>
+            <div class=""><input type="number" name="value3" min="0" placeholder="Координата центра по Y" /></div>
+        </div>
+
+        <p><strong>Координаты первой точки</strong></p>
+        <div class="container">
+            <div class=""><input type="number" name="value4" min="0" placeholder="Координата Х" /></div>
+            <div class=""><input type="number" name="value5" min="0" placeholder="Координата Y" /></div>
+        </div>
+
+        <p><strong>Координаты второй точки</strong></p>
+        <div class="container">
+            <div class=""><input type="number" name="value6" min="0" placeholder="Координата Х" /></div>
+            <div class=""><input type="number" name="value7" min="0" placeholder="Координата Y" /></div>
+        </div>
+
+        <div class="container">
+            <input class="checkButton" type="button" name="button1" value="Построить" onclick="setParametrs()" />
+
+            <p>
+                <input class="checkButtontwo" type="text" name="value8" value="Взаимное расположение"
+                    readonly="readonly" size="35" />
+            </p>
+        </div>
+    </form>
+
+    <canvas id="canvas" height="563" width="500"></canvas>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
